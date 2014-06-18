@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="whiteboard">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-controller="testctrl">
+    <div>
+      <input type="text" ng-model="ev"><button ng-click="room.push(ev)">Push</button>
+    </div>
+    <div>
+      <button ng-click="room.undo()">Undo</button>
+      <button ng-click="room.redo()">Redo</button>
+    </div>
+    <textarea ng-model="content"></textarea>
+    <script src="js/main.js"></script>
+  </body>
+</html>
